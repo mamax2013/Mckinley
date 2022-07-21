@@ -1,0 +1,21 @@
+.footer {
+  background: #002b41;
+  &__wrap {
+    padding: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__test {
+    margin-right: 30px;
+    font-size: 14px;
+    line-height: 35px;
+    color: var(--ScuBlue);
+  }
+  &__item {
+    font-size: 14px;
+    line-height: 35px;
+    color: var(--ScuBlue);
+  }
+}

@@ -1,0 +1,106 @@
+.snipet {
+  background: var(--Dober);
+  &__wrapper {
+    padding-top: 120px;
+    display: flex;
+  }
+  &__left {
+    width: 400px;
+    position: relative;
+  }
+  &__logo {
+    margin-bottom: 40px;
+  }
+  &__title {
+    font-size: 19px;
+    line-height: 35px;
+    color: var(--ScuBlue);
+  }
+  &__tel {
+    display: block;
+    font-size: 19px;
+    line-height: 35px;
+    color: var(--ScuBlue);
+  }
+  &__item {
+    display: block;
+    font-size: 19px;
+    line-height: 35px;
+    color: var(--ScuBlue);
+  }
+  &__item::after {
+    position: absolute;
+    content: "";
+    border-bottom: solid 1px var(--ScuBlue);
+    width: 235px;
+    bottom: 0;
+    left: 0;
+  }
+  &__info {
+    margin-bottom: 22px;
+    font-size: 28px;
+    line-height: 36px;
+    color: var(--White);
+  }
+  &__wrap {
+    position: relative;
+    max-width: 450px;
+    height: 55px;
+    background: var(--ScuBlue);
+    display: flex;
+    align-items: center;
+  }
+  &__wrap::after {
+    content: "";
+    background-image: url(../../img/rm.svg);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+  }
+  &__email {
+    padding-left: 25px;
+    font-size: 19px;
+    line-height: 35px;
+    color: var(--Dober);
+    background: none;
+    border: none;
+  }
+  &__fut {
+    display: flex;
+    flex-direction: column;
+    padding: 63px 0 120px 0;
+    gap: 12px;
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+  }
+  &__more {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--ScuBlue);
+  }
+}
+@media (max-width: 800px) {
+  .snipet {
+    &__wrapper {
+      flex-wrap: wrap;
+      padding-top: 60px;
+    }
+    &__logo {
+      margin-top: 50px;
+    }
+    &__right {
+      order: -1;
+    }
+    &__wrap::after {
+      content: "";
+      background-image: url(../../img/rm.svg);
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      right: 10px;
+    }
+  }
+}

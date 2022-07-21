@@ -1,0 +1,63 @@
+.picture {
+  background-image: url(./../img/Frame.jpg);
+  background: no-repeat, cover, center;
+  width: 100%;
+  object-fit: cover;
+  padding-top: 189px;
+  position: relative;
+  &__card {
+    display: block;
+    padding: 50px;
+    margin-left: auto;
+    max-width: 423px;
+    background: var(--Dober);
+  }
+  &__text {
+    font-size: 35px;
+    line-height: 42px;
+    color: var(--Politro);
+  }
+  &__tekst {
+    margin: 23px 0 60px 0;
+    font-size: 19px;
+    line-height: 35px;
+    color: var(--Politro);
+  }
+  &__btn {
+    font-size: 18px;
+    line-height: 35px;
+    color: var(--Dobe);
+    padding: 12px 24px;
+    background: var(--Politro);
+    border-radius: 4px;
+    border: none;
+  }
+  &__btn:hover {
+    background-color: rgb(34, 36, 36);
+  }
+  &__btn:hover {
+    color: rgb(8, 247, 247);
+  }
+  &__hiden {
+    display: none;
+  }
+  &__test {
+    max-width: 420px;
+    max-height: 150px;
+    padding: 10px;
+    border: solid 1px var(--Dober);
+    background: var(--Dober);
+    color: var(--White);
+    position: absolute;
+    top: 7%;
+    right: 0%;
+  }
+}
+@media (max-width: 450px) {
+  .picture {
+    &__btn {
+      font-size: 16px;
+      padding: 3px 33px;
+    }
+  }
+}
