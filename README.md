@@ -1,1 +1,2 @@
-[Hello](https://mamax2013.github.io/Mckinley/)
++ одностраничный сайт
+https://mamax2013.github.io/Mckinley/
